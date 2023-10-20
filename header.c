@@ -46,7 +46,7 @@ extern char *Usage;
 extern char *CompressionName;
 
 // Прототипы функций
-void usage_exit(void); // Завершает программу с сообщением об использовании
+void usage_exit(char *prog_name); // Завершает программу с сообщением об использовании
 void print_ratios(char *input, char *output); // Выводит соотношение размеров входного и выходного файлов
 long file_size(char *name); // Возвращает размер указанного файла
 void fatal_error(char *fmt, ...); // Выводит сообщение о фатальной ошибке и завершает программу
